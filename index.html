@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio"/>
+    <meta name="author" content="Dylan Vanmackelbergh"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Vanmackelbergh</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--=================== CONTENUE HEADER ==================-->
+    <header>
+    
+        <a href="index.html" id="logo" title="logo DV"></a>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <nav>
+                    <a href="index.html" id="logonav" title="logo DV"></a>
+                    <ul class="navbarFont">
+                        <li><a href="#section1">Accueil</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#competence">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button">&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+                <div id="hamburger-overlay"></div>
+            </div>
+    </header>
+    <!-- ================CONTENUE MAIN====================== -->
+    <main>
+        
+        <section id="section1">
+            <div>
+                <a href="" id="avatar" title="DV"></a>
+                <p>Développeur Web Junior</p>
+                <div>
+                    <p>Bonjour , je m'apelle Dylan Vanmackelbergh.</p>
+                    <p>Je vous souhaite la bienvenue sur mon Portfolio.</p>
+                    <p>Je suis actuellement en formation et à la recherche d'un stage</p>
+                    <p>Bon Visionnage :)</p>
+                </div>
+            </div>
+        </section>
+        <div>
+            <p class="portfolioH">PORTFOLIO</p>  
+        </div> 
+        <!-- ==============Portfolio======================= -->
+        <section id="portfolio">              
+                <div>
+                    <figure class="netflix">
+                        <img src="img/Netflix.jpg" alt="Netflix">
+                        <figcaption><a href="http://vanmack-format.com/Netflix/">Netflix</a></figcaption>
+                    </figure>
+            
+    
+                    <figure class="licorne">
+                        <img src="img/licornes.JPG" alt="Licorne">
+                        <figcaption><a href="http://vanmack-format.com/Maquette-Licornes/">Licorne</a></figcaption>
+                    </figure>
+                </div>
+
+                <div class="deuxieme">
+                    <figure class="siteSport">
+                        <img src="img/siteSport.jpg" alt="Site de Sport">
+                        <figcaption><a href="http://vanmack-format.com/exo-sit-web/ExositeWeb/">Site de Sport</a></figcaption>
+                    </figure>
+    
+                    <figure class="entrainement">
+                        <img src="img/HTML.jpg" alt="entrainement">
+                        <figcaption><a href="http://vanmack-format.com/Dylan%20Vanmackelbergh/">Entrainement</a></figcaption>
+                    </figure>  
+                </div>      
+        </section>
+
+        <section id="competence">
+            <div>
+                <p>Compétences</p>
+            </div>
+
+            <div class="skills-bar">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+            </div>
+            <div class="progress-line html"><span></span></div>
+                </div>
+            
+            
+            <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+            </div>
+            <div class="progress-line css"><span></span></div>
+                </div>
+            
+            
+            <div class="bar">
+                    <div class="info">
+                        <span>BOOTSTRAP</span>
+            </div>
+            <div class="progress-line bootstrap"><span></span></div>
+                </div>
+            
+            
+            <div class="bar">
+                    <div class="info">
+                        <span>JAVASCRIPT</span>
+            </div>
+            <div class="progress-line javascript"><span></span></div>
+                </div>
+            
+            
+            <div class="bar">
+                    <div class="info">
+                        <span>REACT</span>
+            </div>
+            <div class="progress-line react"><span></span></div>
+                </div>
+                  
+
+            <div class="bar">
+                    <div class="info">
+                        <span>JQUERY</span>
+            </div>
+            <div class="progress-line jquery"><span></span></div>
+                </div>
+            
+                <div class="bar">
+                    <div class="info">
+                        <span>PHOTOSHOP</span>
+            </div>
+            <div class="progress-line photoshop"><span></span></div>
+                </div>
+                  
+            </div>
+        </section>
+        <div class="contactH">
+            <p>CONTACTEZ-MOI</p>
+        </div>
+           <!--================== FORMULAIRE================= -->
+        <div class="backgroundForm">
+        <form id="contact" method="get">
+        <!-- ==============PRENOM====================== -->
+            <div class="conteneurPrenom">
+                <label for="prenom">Prénom</label>
+                <input type="text"  name="prenom" id="prenom" placeholder="Veuillez Renseigner votre prénom" required="requiered">
+            </div>
+            <!-- ==============NOM====================== -->
+            <div class="conteneurNom">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Veuillez Renseigner votre nom" required>
+            </div>
+
+                <!-- ===========EMAIL============ -->
+            <div class="conteneurEmail">
+                <label for="E-mail">Mail</label>
+                <input type="email" name="email" id="email" placeholder="Veuillez Renseigner votre email">
+            </div>
+
+            <!-- ===========MOTDEPASSE============ -->
+            <div class="conteneurMdp">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Veuillez Renseigner votre mot de passe"required>
+            </div>
+
+            <!-- =========MESSAGE================ -->
+            <div class="conteneurMessage">
+                <label for="message">Message</label>
+                <textarea rows="30" col="50" placeholder="Veuillez Renseigner un message"></textarea>
+            </div>
+
+            <!-- ==========VALIDATION FORM=========== -->           
+            <button class="conteneurValidation" type=submit>
+                <img src=img/Envoyer.png>
+            </button>
+            
+
+            <!--=========== EFFACER FORM ============-->
+            <button class="conteneurEffacer" type=submit>
+                <img src=img/Effacer.png>
+            </button>
+        </form>
+    </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <div>
+                <a class="mentions" href="#section1">Mentions Légales</a>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up" title="Retourne en haut :)"></a>
+
+    <!--================== MAIN JS ==================-->
+    <script src="script.js"></script>
+</body>
+</html>
