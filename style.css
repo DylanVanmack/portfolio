@@ -1,0 +1,955 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    
+}
+/* ==============SMOOTH SCROLLING============ */
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+/* ==============HEADER ================*/
+header{
+    height: 120px;
+    max-width: 100%;
+    min-width: 100%;
+    box-shadow: 0 1px 16px rgba(0, 0, 0,1);
+    font-size: 15px;
+    padding-block: 16px;
+    text-transform: uppercase;
+    position: relative;
+    background-color: rgba(186, 186, 186, 0.938);
+}
+
+#logo,#logonav,nav,li {
+    display: inline-block;
+}
+/* =======================Logo + LOGO NAV =============================*/
+#logo {
+    background: url(img/Logocent.png);
+    width: 100px;
+    height: 100px;
+    margin-left: 4em;
+    
+}
+#logonav {
+    background: url(img/Logo2.png);
+    width: 50px;
+    height: 50px;
+    margin-left: 4em;
+    display: none;
+}
+    
+/*==================== GROS logo animation ===========================*/
+#logo {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+  }
+  
+#logo:hover {
+    background: url(img/Logocyan.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } 
+  #logonav {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+  }
+  #logonav:hover{
+    background-image: url(img/Logocyan2.png);
+  }
+
+  /* =============RESPONSIV PETIT LOGO DANS NAVBAR================= */
+@media  all and (min-width: 320px) and (max-width: 600px) {
+
+    #logonav {
+        margin-left: 100px;
+    }
+}
+
+@media  all and (min-width: 600px) and (max-width: 700px) {
+
+    #logonav {
+        margin-left: 280px;
+    }
+}
+@media  all and (min-width: 700px) and (max-width: 960px) {
+
+    #logonav {
+        margin-left: 450px;
+    }
+}
+
+@media  all and (min-width: 961px) and (max-width: 1024px) {
+
+    #logonav {
+        margin-left: 600px;
+    }
+}
+
+@media  all and (min-width: 1024px) and (max-width: 1200px) {
+
+    #logonav {
+        margin-left: 200px;
+    }
+}
+
+@media  all and (min-width: 1201px) and (max-width: 1400px) {
+
+    #logonav {
+        margin-left: 350px;
+    }
+}
+
+@media  all and (min-width: 1400px) and (max-width: 1600px) {
+
+    #logonav {
+        margin-left: 530px;
+    }
+}
+@media  all and (min-width: 1600px) and (max-width: 1920px) {
+
+    #logonav {
+        margin-left: 750px;
+    }
+}
+@media  all and (min-width: 1920px) and (max-width: 2200px) {
+
+    #logonav {
+        margin-left: 1000px;
+    }
+}
+/* =================ANIMATION PETIT LOGO DANS NAV BAR====================== */
+#logonav {
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear ease-out;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg);} 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+/* ======================NAVBAR========================= */
+nav {
+    
+    vertical-align: top;
+    line-height: 80px;
+}
+
+li {
+    font-size: 25px;
+    margin-left: 20px;
+    
+}
+/*============ RESPONSIV NAVBAR + CONTENUE BUTTON BURGER ==========*/
+ul {
+    max-width: 100%;
+    margin-left: 600px;
+}
+
+
+@media  all and (min-width: 320px) and (max-width: 600px) {
+
+    ul {
+        margin-left: 100px;
+    }
+}
+
+@media  all and (min-width: 600px) and (max-width: 700px) {
+
+    ul {
+        margin-left: 280px;
+    }
+}
+@media  all and (min-width: 700px) and (max-width: 960px) {
+
+    ul {
+        margin-left: 450px;
+    }
+}
+
+@media  all and (min-width: 961px) and (max-width: 1024px) {
+
+    ul {
+        margin-left: 600px;
+    }
+}
+
+@media  all and (min-width: 1024px) and (max-width: 1200px) {
+
+    ul {
+        margin-left: 200px;
+    }
+}
+
+@media  all and (min-width: 1201px) and (max-width: 1400px) {
+
+    ul {
+        margin-left: 350px;
+    }
+}
+
+@media  all and (min-width: 1400px) and (max-width: 1600px) {
+
+    ul {
+        margin-left: 530px;
+    }
+}
+@media  all and (min-width: 1600px) and (max-width: 1920px) {
+
+    ul {
+        margin-left: 750px;
+    }
+}
+@media  all and (min-width: 1920px) and (max-width: 2200px) {
+
+    ul {
+        margin-left: 1000px;
+    }
+}
+
+a, button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    
+
+}
+a:hover{
+    color: rgba(0, 255, 255, 0.611);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+}
+
+/*================== HAMBURGER BUTTON ======================== */
+#hamburger-button{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background : black;
+    color: rgba(0, 255, 255, 0.611);
+    transform: translateY(-50%);
+    display: none;
+}
+
+
+#hamburger,#hamburger-content{
+    display:inline;
+}
+
+#hamburger-overlay{
+    display:none;
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.5);
+}
+
+#hamburger-sidebar{
+    position: fixed;
+    width: 85%;
+    z-index: 11;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 3, 92, 0.622);
+    transform: translateX(-100%);
+    transition:transform 0.3s ease-in-out;
+    overflow-y:auto;
+    display: none;
+    
+}
+#hamburger-sidebar li{
+    display: block;
+}
+
+#hamburger-sidebar-header{
+    background:url(img/backgroundheader.jpg) center;
+    background-size: cover;
+    height: 150px;
+}
+
+#hamburger-sidebar-body{
+    padding-block: 15px;
+    padding-inline: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header{
+        background-color: rgba(0, 0, 0, 0.76);
+    }
+    
+	#hamburger-content {
+		display: none;
+	}
+    #logonav {
+        background: url(img/Logo2.png);
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+	#hamburger-button,
+	#hamburger-sidebar,
+	.hamburger-activated #hamburger-overlay {
+		display: block;
+	}
+	.hamburger-activated #hamburger-sidebar {
+		transform: translateX(0);
+	}
+}
+
+/*=============== MAIN =============================*/
+
+/* ====================AVATAR====================== */
+#avatar{
+    position: absolute;
+    left: 35%;
+    top: 2%;
+    background: url(img/avatar1.png) center;
+    width: 400px;
+    height: 400px;
+    
+}
+@media screen and (max-width: 1024px) {
+    #avatar{
+        position: absolute;
+        left: 21%;
+        top: 2%;   
+    }
+}@media screen and (min-width: 1400px) and (max-width:1900px){
+    #avatar{
+        position: absolute;
+        left: 34%;
+        top: 0%;    
+    }
+}@media screen and (min-width: 1920px) and (max-width:2200px){
+    #avatar{
+        position: absolute;
+        left: 38%;
+        top: 0%;    
+    }
+}
+@media all and (min-width: 320px) and (max-width: 600px){
+    #avatar{
+        position: absolute;
+        left: 0%;
+        top: 0%;       
+    }
+}@media all and (min-width: 600px) and (max-width: 1000px){
+    #avatar{
+        position: absolute;
+        left: 10%;
+        top: 2%;  
+    }
+}
+/* ==============Background img code===================== */
+#section1{
+    min-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    background: url(img/code.jpg) center;
+    background-repeat: no-repeat;
+    
+}
+/* ================Background Blanc ======================*/
+#section1>div{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    width: 80%;
+    height:91vh;
+    background-color: rgba(245, 245, 245, 0.786);
+}@media screen and (max-width:400px){
+    #section1>div{
+        width: 100%;
+        left:0%;
+        top: 20%
+    }
+}@media all and (min-width:1900px)and (max-width:3250px){
+    #section1>div{
+        height:88vh;
+    }
+}@media all and (min-width:1200px)and (max-width:1600px){
+    #section1>div{
+        left: 5%;
+        width: 90%;
+        height:91vh;
+    }
+}@media all and (min-width:300px) and (max-width: 399px){
+    #section1>div{
+        height:97vh;
+    }
+}
+/* =======================Font Developpeur WEB JUNIOR========== */
+#section1>div>:nth-child(2){
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 450px;
+    text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
+
+}@media screen and (max-width: 1024px){
+    #section1>div>:nth-child(2){
+    
+    font-size: 40px;
+    
+    }   
+}@media screen and (max-width: 720px){
+    #section1>div>:nth-child(2){
+    
+    font-size: 30px;
+    
+    }   
+}@media all and (min-width: 100px)and (max-width: 380px){
+    #section1>div>:nth-child(2){
+    
+    font-size: 25px;
+    margin-top: 420px;
+    
+    }   
+}
+@media all and (min-width: 380px)and (max-width: 500px){
+    #section1>div>:nth-child(2){
+    
+    font-size: 25px;
+    margin-top: 420px;
+    
+    }   
+}@media all and (min-width: 1200px)and (max-width: 1600px){
+    #section1>div>:nth-child(2){
+    font-size: 38px;
+    margin-top: 400px;
+    }   
+}@media all and (min-width: 1600px)and (max-width: 1920px){
+    #section1>div>:nth-child(2){
+    margin-top: 420px;
+    }   
+}
+/*================= Font paragraphe DEVELOPPEUR Web Junior==================*/
+#section1>div>div>p{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+}
+@media screen and (max-width: 1024px){
+    #section1>div>div>p{
+    
+    font-size: 28px;
+    
+    }   
+}@media screen and (max-width: 720px){
+    #section1>div>div>p{
+    
+    font-size: 20px;
+    
+    }   
+}@media screen and (max-width: 1300px){
+    #section1>div>div>p{
+    
+    font-size: 25px;
+    
+    }
+}@media screen and (min-width: 330px)and (max-width: 450px){
+    #section1>div>div>p{
+    
+    font-size: 19px;
+    
+    }   
+}@media screen and (min-width: 1200px)and (max-width: 1440px){
+    #section1>div>div>p{
+    
+    font-size: 25px;
+    
+    }   
+}@media all and (min-width:100px) and (max-width: 320px){
+    #section1>div>div>p{
+    
+    font-size: 14px;
+    } 
+}
+
+/*======================= FLECHE SCROLL TOP======================= */
+
+#scroll-up{
+    background-image: url(img/fleche1.png);
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+
+/* =====================Contenue PORTFOLIO ========================*/
+
+.portfolioH{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: black;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Fascinate', cursive;
+        font-size: 38px;
+        display: flex;
+        justify-content: center;
+        text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
+        
+    }@media screen and (max-width:500px){
+        .portfolioH{
+            font-size: 25px;
+        }
+    }
+    @media all and (min-width:500px) and (max-width:1000px){
+        .portfolioH{
+            font-size: 30px;
+        }
+    }
+
+#portfolio{
+    background-color:  rgba(0, 255, 255, 0.205);
+    
+    
+}
+
+/* ===================Portfolio====================== */
+
+#portfolio>div>figure{
+    margin-top: 20px;
+    width: 45%;
+    max-width: 100%;
+    height: 25%;
+    max-height: 25%;
+    display: inline-block;
+    border:10px solid rgba(255, 255, 255, 0);
+    box-shadow:0 0 3px 3px rgba(0,0,0,0.2);
+}@media screen and (max-width:500px){
+    #portfolio>div>figure{
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+@media all and (min-width:500px) and (max-width:1000px){
+    #portfolio>div>p{
+        font-size: 30px;
+    }
+}
+
+.licorne,.entrainement{
+    margin-left: 20px;
+}@media screen and (max-width:500px){
+    .licorne,.entrainement{
+        margin-left: 0px;
+    }
+}
+
+.netflix,.siteSport{
+    margin-left: 50px;
+}@media screen and (max-width:500px){
+    .netflix,.siteSport{
+        margin-left: 0px;
+    }
+}
+
+
+.deuxieme{
+    margin-top: 50px;
+}
+
+
+
+/* ============FIGCAPTION PORTFOLIO =======================*/
+#portfolio>div>figure>figcaption>a{
+    margin-left: 40%;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+}@media screen and (max-width:500px){
+    #portfolio>div>figure>figcaption>a{
+        margin-left: 40%;
+    }
+}
+
+/* =======================COMPETENCES======================= */
+#competence>div>p{
+    padding-top: 40px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
+}@media screen and (max-width:500px){
+    #competence>div>p{
+        font-size: 25px;
+    }
+}
+@media all and (min-width:500px) and (max-width:1000px){
+    #competence>div>p{
+        font-size: 30px;
+    }
+}
+
+/* =====================BARRE DE COMPETENCES===================== */
+.skills-bar{
+	width: 100%;
+    margin-top: 50px;
+	background-color : rgba(0, 255, 255, 0.205);
+	border-radius: 10px;
+	padding: 25px 30px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.skills-bar .bar{
+	margin: 20px 0px;
+}
+
+
+.skills-bar .bar:first-child{
+	margin-top: 0px;
+}
+
+.skills-bar .bar .info{
+	margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+	font-size: 17px;
+	font-weight: 500;
+	opacity: 0;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+	animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+
+.skills-bar .bar .progress-line{
+	position: relative;
+	height: 10px;
+	width:100%;
+	background-color: #ffffff;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),0px 1px rgba(255,255,255,0.8);
+	animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+
+
+}
+.bar .progress-line span{
+	height: 100%;
+	width: 80%;
+	background: #000000;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s  cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+
+}
+
+.progress-line.html span{
+	width: 60%;
+}
+
+
+.progress-line.css span{
+	width: 60%;
+}
+
+.progress-line.bootstrap span{
+	width: 50%;
+}
+
+.progress-line.javascript span{
+	width: 30%;
+}
+
+.progress-line.react span{
+	width: 30%;
+}
+.progress-line.jquery span{
+	width: 20%;
+}
+.progress-line.photoshop span{
+	width: 80%;
+}
+
+
+
+.bar .progress-line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:#000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+
+}
+
+
+
+.bar .progress-line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px;
+	background: #000;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2{
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.progress-line.html span::after{
+	content: "Débutant/Avancé";
+}@media screen and (max-width:600px){
+    .progress-line.html span::after{
+        font-size: 6px;
+}
+}
+
+.progress-line.css span::after{
+	content: "Débutant/Avancé";
+}@media screen and (max-width:600px){
+    .progress-line.css span::after{
+        font-size: 6px;
+}
+}
+
+.progress-line.bootstrap span::after{
+	content: "Débutant/Avancé";
+}@media screen and (max-width:600px){
+    .progress-line.bootstrap span::after{
+        font-size: 6px;
+}
+}
+
+.progress-line.javascript span::after{
+	content: "Débutant";
+}@media screen and (max-width:600px){
+    .progress-line.javascript span::after{
+        font-size: 6px;
+}
+}
+
+.progress-line.react span::after{
+	content: "Débutant";
+}@media screen and (max-width:600px){
+    .progress-line.react span::after{
+        font-size: 6px;
+}
+}
+.progress-line.jquery span::after{
+	content: "Débutant";
+}@media screen and (max-width:600px){
+    .progress-line.jquery span::after{
+        font-size: 6px;
+}
+}
+.progress-line.photoshop span::after{
+	content: "Confirmé";
+}@media screen and (max-width:600px){
+    .progress-line.jquery span::after{
+        font-size: 6px;
+}
+}
+
+/* ======================CONTACTEZ-MOI============================ */
+
+.contactH{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
+}@media screen and (max-width:500px){
+    .contactH{
+        font-size: 25px;
+    }
+}
+@media all and (min-width:500px) and (max-width:1000px){
+    .contactH{
+        font-size: 30px;
+    }
+}
+
+.backgroundForm{
+    background-color : rgba(0, 255, 255, 0.205);
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    max-width:1620px;
+    margin: 0 auto;
+}@media all and (min-width:1600px) and (max-width:1920px){
+    form{
+        width: 80%;
+    }
+}
+
+.conteneurPrenom,
+.conteneurNom,
+.conteneurEmail,
+.conteneurMdp,
+.conteneurMessage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0;
+}
+label{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+}
+
+.conteneurPrenom>input,
+.conteneurNom>input,
+.conteneurEmail>input,
+.conteneurMdp>input,
+.conteneurMessage>textarea{
+    width: 80%;
+    min-width: 300px;
+    height: 35px;
+}
+
+.conteneurMessage>textarea{
+    height: 200px;
+
+}
+
+.conteneurValidation>img,
+.conteneurEffacer>img{
+    width: 100px;
+    height: 30px;
+}
+
+.conteneurValidation{
+    margin-left: 41.3%;
+}@media all and (min-width:300px) and (max-width:400px){
+    .conteneurValidation{
+        margin-left: 18%;
+    }
+}@media all and (min-width:400px) and (max-width:500px){
+    .conteneurValidation{
+        margin-left: 23%;
+    }
+}@media all and (min-width:500px) and (max-width:600px){
+    .conteneurValidation{
+        margin-left: 26%;
+    }
+}@media all and (min-width:600px) and (max-width:800px){
+    .conteneurValidation{
+        margin-left: 30%;
+    }
+}@media all and (min-width:1450px) and (max-width:1980px){
+    .conteneurValidation{
+        margin-left: 43.5%;
+    }
+}
+
+.conteneurEffacer{
+    margin-left: 20px;
+}@media all and (min-width:300px) and (max-width:400px){
+    .conteneurEffacer{
+        margin-left: 20px;
+    }
+}@media all and (min-width:400px) and (max-width:600px){
+    .conteneurEffacer{
+        margin-left: 20px;
+    }
+}
+
+
+/* ==============FOOTER================*/
+.footer{
+    height: 130px;
+    max-width: 100%;
+    min-width: 100%;
+    box-shadow: 0 1px 16px rgba(0, 0, 0,1);
+    
+    padding-block: 16px;
+    text-transform: uppercase;
+    position: relative;
+    background-color: rgba(186, 186, 186, 0.938);
+}
+.mentions{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fascinate', cursive;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
+}
+
