@@ -368,11 +368,17 @@ a:hover{
         left: 0%;
         top: 0%;       
     }
-}@media all and (min-width: 600px) and (max-width: 1000px){
+}@media all and (min-width: 800px) and (max-width: 1000px){
     #avatar{
         position: absolute;
-        left: 10%;
+        left: 22%;
         top: 2%;  
+    }
+}@media all and (min-width: 600px) and (max-width: 800px){
+    #avatar{
+        position: absolute;
+        left: 0%;
+        top: 0%;  
     }
 }
 /* ==============Background img code===================== */
@@ -392,7 +398,7 @@ a:hover{
     width: 80%;
     height:91vh;
     background-color: rgba(245, 245, 245, 0.786);
-}@media screen and (max-width:400px){
+}@media screen and (max-width:1000px){
     #section1>div{
         width: 100%;
         left:0%;
@@ -500,10 +506,10 @@ a:hover{
     font-size: 25px;
     
     }   
-}@media all and (min-width:100px) and (max-width: 320px){
+}@media all and (min-width:100px) and (max-width: 329px){
     #section1>div>div>p{
     
-    font-size: 14px;
+        font-size: 15px;
     } 
 }
 
@@ -944,12 +950,13 @@ label{
 .mentions{
     padding-top: 30px;
     margin-bottom: 20px;
+    margin-left: 20px;
     color: black;
     font-family: 'Dancing Script', cursive;
     font-family: 'Fascinate', cursive;
-    font-size: 38px;
+    font-size: 15px;
     display: flex;
-    justify-content: center;
+    justify-content:start;
     text-shadow: 2px 2px rgba(0, 255, 255, 0.611);
 }
 
